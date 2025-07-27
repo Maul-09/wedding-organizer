@@ -7,11 +7,10 @@ use Illuminate\Http\Request;
 
 use function App\Helper\path_view;
 
-class ClientController extends Controller
+class AboutController extends Controller
 {
-    public function index(){
-
-        $view = path_view('user.index');
+    public function about(){
+        $view = path_view('client.about-us');
         return view($view);
     }
 }
